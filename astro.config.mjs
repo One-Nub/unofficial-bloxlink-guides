@@ -16,6 +16,7 @@ export default defineConfig({
         },
       ],
       sidebar: [
+        { slug: "landing" },
         {
           label: "Verification",
           autogenerate: { directory: "verification" },
