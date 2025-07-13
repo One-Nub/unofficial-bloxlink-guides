@@ -1,0 +1,98 @@
+---
+title: Getting Started
+description: Guide to first get started with using the bot in your server!
+---
+
+import {LinkCard, Steps} from '@astrojs/starlight/components';
+
+## Guided Setup
+
+<Steps>
+1. Invite the bot to your server
+    <LinkCard title="Invite Bloxlink"
+        href="https://blox.link/invite" 
+        description="Invite link for the Bloxlink bot." 
+        target="_blank"
+    />
+
+2. Use the /setup command 
+    > *This will guide you through setting up your nickname template, verified role name, and even link a group!*
+
+    <details>
+    <summary> Used the bot before? </summary>
+        In the past the bot would create your group roles for you in Discord. It does not do that
+        anymore, so if you want that you will need to use the `/bind group` command described below instead.
+    </details>
+
+    :::caution
+    You can only set your verified role name to "Verified" through setup right now. If you wish to use another
+    role, please see the manual configuration section.
+    :::
+    
+3. That's it!
+</Steps>
+
+---
+
+## Manual Configuration
+Follow this if you want to manually do what /setup does 
+
+<Steps>
+1. Invite the bot to your server
+    <LinkCard title="Invite Bloxlink"
+        href="https://blox.link/invite" 
+        description="Invite link for the Bloxlink bot." 
+        target="_blank"
+    />
+
+2. Head to the server dashboard & select your server
+    <LinkCard title="Server dashboard"
+        href="https://blox.link/dashboard/user/servers" 
+        description="The list of servers you are an admin in." 
+        target="_blank"
+    />
+</Steps>
+
+### Set the nickname template
+
+<Steps>
+1. Head to the "Verification" tab of your server dashboard <br />
+    *TODO: add an image*
+
+2. Insert the desired nickname template using the options listed, or put in what you wish <br />
+    *TODO: Add a link to list of valid nickname variables on the site somewhere*
+</Steps>
+
+### Set the verified role 
+<Steps>
+1. Head to the "Verification" tab of your server dashboard <br />
+    *TODO: add an image*
+
+2. Locate the "Verified Role" option, and choose the role you wish to use <br />
+    *TODO: Add an image* <br />
+    > If this is a new server, create the role you wish to use before getting to this point!
+</Steps>
+
+### Connect your group
+This is what we call a **bind**, and is how we have Bloxlink assign any roles other than the 
+Verified and Unverified roles!
+
+These cannot be created from the website yet, so we need to go back to Discord first.
+<Steps>
+1. Head to your server on Discord
+2. Type in `/bind group` and choose the command from the list <br />
+    *TODO: Insert image*
+3. Type in your group ID to the `group_id` option
+    <details>
+        <summary> Get your group ID </summary>
+        Your group ID is the string of numbers inside your group URL.
+
+        For example, with the group URL of `https://www.roblox.com/communities/3587262/Bloxlink-Space`, the 
+        group ID is `3587262`.
+    </details>
+4. Choose the `bind_mode`, the default to use is `Bind all current and future group roles`
+5. Choose if you want the bot to create your group ranks as Discord roles<br/>
+    > By default, the bot will use any role that has the <u>same name</u> as the Roblox group rank.<br/>
+    > If you choose not create them now, the bot will create the roles as it needs them.<br/>
+6. That's it!
+</Steps>
