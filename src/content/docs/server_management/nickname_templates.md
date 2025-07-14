@@ -41,13 +41,13 @@ These templates, other than `{group-rank-<id>}`, are determined based on the hig
 
 ## Discord User Templates
 
-| Template                | Description                                                                      |
-| ----------------------- | -------------------------------------------------------------------------------- |
-| `{discord-id}`          | the user's discord user ID                                                       |
-| `{discord-mention}`     | changes to ping/mention a user (ex: @Bloxlink)                                   |
-| `{discord-name}`        | the user's Discord username (unique)                                             |
-| `{discord-global-name}` | the user's Discord display name (not unique), falls back to their username       |
-| `{discord-nick}`        | user's set nickname, falls back to their username, ! can cause recursive loops ! |
+| Template                | Description                                                                |
+| ----------------------- | -------------------------------------------------------------------------- |
+| `{discord-id}`          | the user's discord user ID                                                 |
+| `{discord-mention}`     | changes to ping/mention a user (ex: @Bloxlink)                             |
+| `{discord-name}`        | the user's Discord username (unique)                                       |
+| `{discord-global-name}` | the user's Discord display name (not unique), falls back to their username |
+| `{discord-nick}`        | the user's set nickname, falls back to their username                      |
 
 :::danger
 `{discord-nick}` can cause recursive loops where the bot will duplicate the nickname. This template is best
