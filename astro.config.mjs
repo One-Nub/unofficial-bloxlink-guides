@@ -31,6 +31,7 @@ export default defineConfig({
           autogenerate: { directory: "server_management" },
         },
       ],
+      lastUpdated: true,
     }),
   ],
 });
