@@ -41,6 +41,7 @@
   background-color: var(--sl-color-gray-6);
 }
 
+/* Hide sidebar border */
 .right-sidebar {
   border-inline-start: none;
 }
@@ -53,9 +54,40 @@
   color: var(--sl-color-accent);
 }
 
+/* Change link card default & hover background colors */
 .sl-link-card {
   background-color: var(--link-card-bg);
 }
 .sl-link-card:hover {
   background-color: var(--sl-color-gray-6);
+}
+
+/* Indent content of step cards */
+.sl-steps
+  > li
+  *:not(
+    p:first-of-type,
+    ul,
+    ul > li,
+    a,
+    .astro-mf7fz2mj,
+    details,
+    code,
+    u,
+    em,
+    aside,
+    aside p > svg,
+    .starlight-aside__content
+  ) {
+  margin-left: 1.5rem;
+}
+.sl-steps li > details {
+  padding-inline-start: unset;
+  margin-left: 1rem;
+}
+.sl-steps li details > summary {
+  padding-inline-start: unset;
+}
+summary ~ p {
+  margin-left: 1.5rem;
 }
