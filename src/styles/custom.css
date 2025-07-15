@@ -70,6 +70,8 @@
     p:first-of-type,
     ul,
     ul > li,
+    ol,
+    ol > li,
     a,
     .astro-mf7fz2mj,
     details,
