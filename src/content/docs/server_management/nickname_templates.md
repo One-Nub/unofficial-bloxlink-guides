@@ -9,6 +9,7 @@ sidebar:
 
 - All templates require the curly-brackets `{}` around them to work!
 - These templates can also be used in places like the join/leave messages, and the verification channel message.
+- Nicknames do not have to be only templates! For example, `Cool Guy | {roblox-name}` is valid.
   :::
 
 ## Roblox User Templates
