@@ -11,9 +11,10 @@
   --sl-color-gray-5: #535c63;
   --sl-color-gray-6: #111827;
   --sl-color-black: #1f2937;
-  --sl-color-hairline: var(--sl-color-gray-5);
   --sl-color-text-invert: var(--sl-color-white);
   --sl-color-text: var(--sl-color-gray-1);
+  --sl-color-hairline: var(--sl-color-gray-5);
+  --sl-color-bg-inline-code: var(--sl-color-gray-6);
   --link-card-bg: #1c2532;
   --sl-font: "Poppins", sans-serif;
 }
@@ -30,11 +31,8 @@
   --sl-color-gray-5: #a9aeb1;
   --sl-color-gray-6: #cbced0;
   --sl-color-black: #eeefef;
-  --sl-color-hairline: var(--sl-color-gray-5);
   --sl-color-text-invert: var(--sl-color-black);
-  --sl-color-text: var(--sl-color-gray-1);
   --link-card-bg: #d6d7d7;
-  --sl-font: "Poppins", sans-serif;
 }
 
 .pagination-links > a {
