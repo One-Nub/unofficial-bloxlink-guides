@@ -91,3 +91,7 @@
 summary ~ p {
   margin-left: 1.5rem;
 }
+
+ol li > p:first-child {
+  font-weight: bold;
+}
