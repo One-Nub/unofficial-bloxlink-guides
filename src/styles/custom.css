@@ -63,6 +63,7 @@
 }
 
 /* Indent content of step cards */
+/* Is there a better way than to exclude all the special attributes? */
 .sl-steps
   > li
   *:not(
@@ -77,7 +78,8 @@
     em,
     aside,
     aside p > svg,
-    .starlight-aside__content
+    .starlight-aside__content,
+    strong
   ) {
   margin-left: 1.5rem;
 }
