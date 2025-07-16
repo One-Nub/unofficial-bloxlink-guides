@@ -3,6 +3,11 @@ A various assortment of guides for the discord bot Bloxlink.
 Runs on Github Pages, using Astro + Starlight <br/>
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
+Uses plugins:
+
+- starlight-image-zoom
+- astro-embed
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
