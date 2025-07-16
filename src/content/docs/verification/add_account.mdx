@@ -11,60 +11,64 @@ import {LinkCard, Steps} from '@astrojs/starlight/components'
 Linking an account, called verification, is a core feature of Bloxlink. Learn here how to add an account!
 
 <Steps>
-    1. Head to the Bloxlink website
-        <LinkCard 
-            title='Bloxlink Website'
-            href='https://blox.link/'
-            target='_blank'
-        />
+    1. Head to the <a href="https://blox.link" target="_blank">Bloxlink website</a>
 
-    2. Login to the site with the `Sign in with Discord` button
-        
-        TODO: insert image
+    2. Login with the `Sign in with Discord` button
 
-        On your PC, this will launch Discord with a pop-up asking you to Authorize Bloxlink.<br />
-        On mobile, this will launch Discord's website, asking you to Authorize Bloxlink.
+        ![Blue Sign in with Discord button](../../../assets/verify/1-sign-in-button.png)
 
         <details>
-            <summary>Getting stuck here?</summary>
+            <summary>It's asking me to verify my account?</summary>
 
             Check out the 
             [common issues](/verification/common_issues#discord-says-you-need-to-verify-your-account-in-order-to-perform-this-action) 
             page!
         </details>
 
-    3. Head to the account management page
+    3. Head to the <a href="https://blox.link/dashboard/user/verifications" target="_blank">account management</a> page
 
         1. Click your Discord username in the top right of the site
         2. Click the `Dashboard` button in the drop down
         
-        <LinkCard 
-            title="Or click here!" 
-            description="The dashboard page" 
-            href="https://blox.link/dashboard/user/verifications" 
-            target="_blank" 
-        />
+        ![Drop down menu with a red box around the Dashboard item](../../../assets/verify/2-dashboard-button.png)
 
     4. Click the `Verify Now` button or the `Add Another One` button.
     
-        TODO: Add images :^)
+        ![Red highlight around "verify now" and "add another one" buttons](../../../assets/verify/3-add-account-buttons.png)
+
+        Or <a href="https://blox.link/dashboard/user/verifications/verify" target="_blank">click here</a> to go there directly!
 
     5. Click `Next` below the `Authorize Roblox` button
 
         This will take you to Roblox's site. Make sure you are on the official **roblox.com** domain.
         
-        TODO: Still waiting on images lol
+        ![Screenshot of page with the next button to press, below the "Authorize Roblox" option](../../../assets/verify/4-authorize-next.png)
 
     6. Authorize Bloxlink with your Roblox Account
 
-        Click `Next`, then after reading what Bloxlink requests access to, click `Confirm and Give Access` at
+        1. Make sure you are using the right Roblox account then click `Next` 
+
+            ![Roblox authorize account page](../../../assets/verify/5-roblox-continue.png)
+        
+            <details>
+                <summary>Roblox says I am not allowed to use this application!</summary>
+
+                Head to the [common issues](/verification/common_issues/#roblox-says-you-are-not-allowed-to-use-this-application) 
+                page to learn how to fix this.
+            </details>
+        
+        2. After reading what Bloxlink requests access to, click the blue `Confirm and Give Access` button at
         the bottom of the page.
+
+            ![Blue confirm and give access button](../../../assets/verify/6-roblox-access.png)
 
         After confirming, you will be taken back to Bloxlink's site to continue.
 
     7. Select what servers you want to use this account in
 
         No servers are selected by default - selected servers will be outlined in green.
+
+        ![Example of a selected server outlined in green, and one that is not](../../../assets/verify/7-selected-deselected.png)
 
         At the bottom of the list you can choose to `Select all servers` as well.
 
