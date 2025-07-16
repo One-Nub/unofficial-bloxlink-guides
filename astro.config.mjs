@@ -6,7 +6,7 @@ import starlightImageZoom from "starlight-image-zoom";
 // https://astro.build/config
 export default defineConfig({
   site: "https://one-nub.github.io",
-  base: "/unofficial-bloxlink-guides",
+  base: "unofficial-bloxlink-guides",
   integrations: [
     starlight({
       plugins: [starlightImageZoom()],
