@@ -10,7 +10,7 @@ fi
 
 while read -r file; do
   case "$file" in
-    *.jpg|*.jpeg|*.png|*.gif|*.tiff|*.bmp)
+    *.jpg|*.jpeg|*.png|*.gif|*.tiff|*.bmp|*.webp)
       echo "Removing EXIF data from: $file" >&2
       exiftool -all= --icc_profile:all -tagsfromfile @ -orientation -overwrite_original "$file"
       if [ $? -ne 0 ]; then
