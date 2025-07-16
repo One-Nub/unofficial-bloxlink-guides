@@ -6,6 +6,7 @@ next: false
 ---
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { withBase } from '../../utils/base_href';
 
 Welcome to the **Unofficial Bloxlink Guide** site! This is a site made by the volunteers at Bloxlink to 
 give people some more information, and another resource, to learn how to use and work with the bot.
@@ -19,12 +20,12 @@ All this to say, we hope this helps!
 <CardGrid>
     <LinkCard 
         title="Verification" 
-        href="/verification/add_account" 
+        href={withBase("/verification/add_account")} 
         description="Learn how to verify with Bloxlink"
     />
     <LinkCard 
         title="Server Administration" 
-        href="/server_management/getting_started" 
+        href={withBase("/server_management/getting_started")} 
         description="Learn about setting up Bloxlink in your server"
     />
 </CardGrid>
