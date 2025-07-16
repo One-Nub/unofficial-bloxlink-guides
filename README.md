@@ -8,6 +8,13 @@ Uses plugins:
 - starlight-image-zoom
 - astro-embed
 
+Uses a git hook to scrub EXIF data from images. This is located under the [hooks](/hooks) directory.
+Requires exiftool to be installed & the `git config core.hooksPath .git-hooks` setting to be set.
+This moves the hooks path from inside .git to a root-level "hooks" folder in the repo.
+Source: https://dunkirk.sh/blog/remove-exif-git-hook/
+
+---
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
