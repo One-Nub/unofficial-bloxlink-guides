@@ -11,7 +11,7 @@ export default defineConfig({
     starlight({
       plugins: [starlightImageZoom()],
       title: "Unofficial Bloxlink Guides",
-      customCss: ["./src/styles/custom.css", "@fontsource/poppins"],
+      customCss: ["./src/styles/custom.css", "@fontsource-variable/inter"],
       social: [
         {
           icon: "github",
