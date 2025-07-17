@@ -15,7 +15,10 @@
   --sl-color-text: var(--sl-color-gray-1);
   --sl-color-hairline: var(--sl-color-gray-5);
   --sl-color-bg-inline-code: var(--sl-color-gray-6);
+  /* --sl-color-bg-nav: var(--sl-color-black); */
+  /* --sl-color-bg-sidebar: var(--sl-color-black); */
   --link-card-bg: #1c2532;
+  --menus-border: var(--sl-color-gray-5);
   --sl-font: "Poppins", sans-serif;
 }
 /* Light mode colors. */
@@ -79,9 +82,11 @@
     aside,
     aside p > svg,
     .starlight-aside__content,
-    strong
+    strong,
+    starlight-menu-button,
+    p > starlight-image-zoom-zoomable
   ) {
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
 }
 .sl-steps li > details {
   padding-inline-start: unset;
@@ -91,10 +96,24 @@
   padding-inline-start: unset;
 }
 summary ~ p {
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
 }
 
 /* Bold first paragraph (found in Steps) */
 ol li > p:first-child {
   font-weight: 600;
+}
+
+/* Make youtube embed from astro-embed smaller */
+lite-youtube {
+  max-width: 500px !important;
+}
+
+/* Sidebar + nav bar tweaks */
+header.header.astro-vrdttmbt {
+  z-index: 1;
+}
+#starlight__sidebar {
+  margin-top: -2px;
+  z-index: 2;
 }
