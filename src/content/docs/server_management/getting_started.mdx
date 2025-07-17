@@ -13,13 +13,13 @@ import {LinkCard, Steps} from '@astrojs/starlight/components';
 <Steps>
 1. Invite the bot to your server
     <LinkCard title="Invite Bloxlink"
-        href="https://blox.link/invite" 
-        description="Invite link for the Bloxlink bot." 
+        href="https://blox.link/invite"
+        description="Invite link for the Bloxlink bot."
         target="_blank"
     />
 
-2. Use the /setup command 
-    
+2. Use the /setup command
+
     This will guide you through setting up your nickname template, verified role name, and even link a group!
 
     <details>
@@ -33,11 +33,11 @@ import {LinkCard, Steps} from '@astrojs/starlight/components';
     You can only set your verified role name to "Verified" through setup right now. If you wish to use another
     role, please see the manual configuration section.
     :::
-    
-3. That's it!
 
-    :::caution 
-    The bot will follow all settings you publish here for an hour after submitting the command. This means that 
+3. That's it! 🎉
+
+    :::caution
+    The bot will follow all settings you publish here for an hour after submitting the command. This means that
     if you change any settings on the dashboard after using /setup, it will not use those changes until that hour has passed.
     :::
 </Steps>
@@ -45,13 +45,13 @@ import {LinkCard, Steps} from '@astrojs/starlight/components';
 ---
 
 ## Manual Configuration
-Follow this if you want to manually do what /setup does 
+Follow this if you want to manually do what /setup does
 
 <Steps>
 1. Invite the bot to your server
     <LinkCard title="Invite Bloxlink"
-        href="https://blox.link/invite" 
-        description="Invite link for the Bloxlink bot." 
+        href="https://blox.link/invite"
+        description="Invite link for the Bloxlink bot."
         target="_blank"
     />
 
@@ -60,8 +60,8 @@ Follow this if you want to manually do what /setup does
     ![Image showing the Manage Servers tab selected](../../../assets/server_config/1-manage-servers.png)
 
     <LinkCard title="Server dashboard"
-        href="https://blox.link/dashboard/user/servers" 
-        description="The list of servers you are an admin in." 
+        href="https://blox.link/dashboard/user/servers"
+        description="The list of servers you are an admin in."
         target="_blank"
     />
 
@@ -71,25 +71,25 @@ Follow this if you want to manually do what /setup does
 ### Set the nickname template
 
 <Steps>
-1. Head to the "Verification" tab of your server dashboard 
-    
+1. Head to the "Verification" tab of your server dashboard
+
     ![Image showing the verification tab selected](../../../assets/server_config/2-verification.png)
 
-2. Insert the desired nickname template using the options listed, or put in what you wish 
+2. Insert the desired nickname template using the options listed, or put in what you wish
 
     ![Image of the default nickname template option](../../../assets/server_config/3-default-nt.png)
-    
+
     Click [here](../nickname_templates) to view the full list of available templates.
 
 </Steps>
 
-### Set the verified role 
+### Set the verified role
 <Steps>
-1. Head to the "Verification" tab of your server dashboard 
+1. Head to the "Verification" tab of your server dashboard
 
     ![Image showing the verification tab selected](../../../assets/server_config/2-verification.png)
 
-2. Locate the "Verified Role" option, and choose the role you wish to use 
+2. Locate the "Verified Role" option, and choose the role you wish to use
 
     ![Image of the Verified Role option](../../../assets/server_config/4-verified-role.png)
 
@@ -97,7 +97,7 @@ Follow this if you want to manually do what /setup does
 </Steps>
 
 ### Connect your group
-This is what we call a **bind**, and is how we have Bloxlink assign any roles other than the 
+This is what we call a **bind**, and is how we have Bloxlink assign any roles other than the
 Verified and Unverified roles!
 
 These cannot be created from the website yet, so we need to go back to Discord first.
@@ -111,7 +111,7 @@ These cannot be created from the website yet, so we need to go back to Discord f
 
         Your group ID is the string of numbers inside your group URL.
 
-        For example, with the group URL of `https://www.roblox.com/communities/3587262/Bloxlink-Space`, the 
+        For example, with the group URL of `https://www.roblox.com/communities/3587262/Bloxlink-Space`, the
         group ID is `3587262`.
     </details>
 
@@ -123,13 +123,13 @@ These cannot be created from the website yet, so we need to go back to Discord f
 
 5. Choose if you want the bot to create your group ranks as Discord roles
 
-    The bot will use any Discord role that has the <u>same name</u> as a rank in your Roblox group. These could be 
+    The bot will use any Discord role that has the <u>same name</u> as a rank in your Roblox group. These could be
     ones that you have made, or the ones that the bot makes.
 
     ![Image of the prompt that will be shown to the user](../../../assets/binds/create-group-roles.png)
-    
+
 
     If you do not have the bot create the Discord roles now, and there is no matching role, it will create the roles as it needs them.
 
-6. That's it!
+6. That's it! 🎉
 </Steps>
