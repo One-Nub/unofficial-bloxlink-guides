@@ -36,14 +36,14 @@ export default defineConfig({
         },
       ],
       lastUpdated: true,
-      favicon: "/public/favicon.svg",
+      favicon: "/favicon.svg",
       head: [
         {
           tag: "link",
           attrs: {
             rel: "icon",
             type: "image/png",
-            href: "/favicon-96x96.png",
+            href: "/unofficial-bloxlink-guides/favicon-96x96.png",
             sizes: "96x96",
           },
         },
@@ -52,14 +52,14 @@ export default defineConfig({
           attrs: {
             rel: "icon",
             type: "image/svg+xml",
-            href: "/favicon.svg",
+            href: "/unofficial-bloxlink-guides/favicon.svg",
           },
         },
         {
           tag: "link",
           attrs: {
             rel: "shortcut icon",
-            href: "/favicon.ico",
+            href: "/unofficial-bloxlink-guides/favicon.ico",
           },
         },
         {
@@ -67,14 +67,14 @@ export default defineConfig({
           attrs: {
             rel: "apple-touch-icon",
             sizes: "180x180",
-            href: "/apple-touch-icon.png",
+            href: "/unofficial-bloxlink-guides/apple-touch-icon.png",
           },
         },
         {
           tag: "link",
           attrs: {
             rel: "manifest",
-            href: "/site.webmanifest",
+            href: "/unofficial-bloxlink-guides/site.webmanifest",
           },
         },
       ],
