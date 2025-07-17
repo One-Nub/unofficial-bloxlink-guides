@@ -26,7 +26,7 @@ import {LinkCard, Steps} from '@astrojs/starlight/components';
     <summary> Used the bot before? </summary>
 
         In the past the bot would create your group roles for you in Discord. It does not do that
-        anymore, so if you want it to do that, you will need to use the `/bind group` command described below instead.
+        anymore, so if you want it to do that, you will need to use the `/bind group` command described [below](#connect-your-group) instead.
     </details>
 
     :::caution
@@ -35,6 +35,11 @@ import {LinkCard, Steps} from '@astrojs/starlight/components';
     :::
     
 3. That's it!
+
+    :::caution 
+    The bot will follow all settings you publish here for an hour after submitting the command. This means that 
+    if you change any settings on the dashboard after using /setup, it will not use those changes until that hour has passed.
+    :::
 </Steps>
 
 ---
@@ -51,6 +56,9 @@ Follow this if you want to manually do what /setup does
     />
 
 2. Head to the dashboard & go to the "Manage Servers" page
+
+    ![Image showing the Manage Servers tab selected](../../../assets/server_config/1-manage-servers.png)
+
     <LinkCard title="Server dashboard"
         href="https://blox.link/dashboard/user/servers" 
         description="The list of servers you are an admin in." 
@@ -63,20 +71,28 @@ Follow this if you want to manually do what /setup does
 ### Set the nickname template
 
 <Steps>
-1. Head to the "Verification" tab of your server dashboard <br />
-    *TODO: add an image*
+1. Head to the "Verification" tab of your server dashboard 
+    
+    ![Image showing the verification tab selected](../../../assets/server_config/2-verification.png)
 
-2. Insert the desired nickname template using the options listed, or put in what you wish <br />
-    *TODO: Add a link to list of valid nickname variables on the site somewhere*
+2. Insert the desired nickname template using the options listed, or put in what you wish 
+
+    ![Image of the default nickname template option](../../../assets/server_config/3-default-nt.png)
+    
+    Click [here](../nickname_templates) to view the full list of available templates.
+
 </Steps>
 
 ### Set the verified role 
 <Steps>
-1. Head to the "Verification" tab of your server dashboard <br />
-    *TODO: add an image*
+1. Head to the "Verification" tab of your server dashboard 
 
-2. Locate the "Verified Role" option, and choose the role you wish to use <br />
-    *TODO: Add an image* <br />
+    ![Image showing the verification tab selected](../../../assets/server_config/2-verification.png)
+
+2. Locate the "Verified Role" option, and choose the role you wish to use 
+
+    ![Image of the Verified Role option](../../../assets/server_config/4-verified-role.png)
+
     > If this is a new server, create the role you wish to use before getting to this point!
 </Steps>
 
@@ -87,9 +103,9 @@ Verified and Unverified roles!
 These cannot be created from the website yet, so we need to go back to Discord first.
 <Steps>
 1. Head to your server on Discord
-2. Type in `/bind group` and choose the command from the list <br />
-    *TODO: Insert image*
+2. Type in `/bind group` and choose the command from the list
 3. Type in your group ID to the `group_id` option
+
     <details>
         <summary> Get your group ID </summary>
 
@@ -98,9 +114,22 @@ These cannot be created from the website yet, so we need to go back to Discord f
         For example, with the group URL of `https://www.roblox.com/communities/3587262/Bloxlink-Space`, the 
         group ID is `3587262`.
     </details>
-4. Choose the `bind_mode`, the default to use is `Bind all current and future group roles`
-5. Choose if you want the bot to create your group ranks as Discord roles<br/>
-    > By default, the bot will use any role that has the <u>same name</u> as the Roblox group rank.<br/>
-    > If you choose not create them now, the bot will create the roles as it needs them.<br/>
+
+4. Choose the `bind_mode`
+
+    To have the bot automatically manage which roles to give, select the `Bind all current and future group roles` choice.
+
+    ![Image of the bind mode option described](../../../assets/server_config/7-bind-mode.png)
+
+5. Choose if you want the bot to create your group ranks as Discord roles
+
+    The bot will use any Discord role that has the <u>same name</u> as a rank in your Roblox group. These could be 
+    ones that you have made, or the ones that the bot makes.
+
+    ![Image of the prompt that will be shown to the user](../../../assets/binds/create-group-roles.png)
+    
+
+    If you do not have the bot create the Discord roles now, and there is no matching role, it will create the roles as it needs them.
+
 6. That's it!
 </Steps>
