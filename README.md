@@ -1,18 +1,16 @@
 A various assortment of guides for the discord bot Bloxlink.
 
 Runs on Github Pages, using Astro + Starlight <br/>
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
-
 Uses plugins:
 
-- starlight-image-zoom
-- astro-embed
+- [starlight-image-zoom](https://github.com/HiDeoo/starlight-image-zoom)
+- [astro-embed](https://github.com/delucis/astro-embed)
 
-Uses a git hook to scrub EXIF data from images. This is located under the [.git-hooks](/.git-hooks) directory.
-Requires [exiftool](https://exiftool.org/) to be installed & the `git config core.hooksPath .git-hooks` setting to be set.
-This moves the hooks path from inside .git to a root-level ".git-hooks" folder in the repo.
+Also uses a git hook to scrub EXIF data from images. This is located under the [.git-hooks](/.git-hooks) directory. <br>
+Requires [exiftool](https://exiftool.org/) to be installed & the `git config core.hooksPath .git-hooks` setting to be set. <br>
+This moves the hooks path from inside `.git` to a root-level `.git-hooks` folder in the repo.
 
----
+## [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
 ## 🧞 Commands
 
