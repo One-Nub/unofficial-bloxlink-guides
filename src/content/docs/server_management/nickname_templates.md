@@ -5,6 +5,12 @@ sidebar:
   order: 3
 ---
 
+Nickname templates are templates that the bot will replace with some other text. This lets you customize the
+nickname of your server members in a variety of ways!
+
+You can set these either through the [server dashboard](https://blox.link/dashboard/user/servers), or with the
+`/setup` command on the bot.
+
 :::tip
 
 - All templates require the curly-brackets `{}` around them to work!
