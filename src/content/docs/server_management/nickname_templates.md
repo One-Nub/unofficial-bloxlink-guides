@@ -14,13 +14,13 @@ sidebar:
 
 ## Roblox User Templates
 
-| Template         | Description                                                   |
-| ---------------- | ------------------------------------------------------------- |
-| `{roblox-name}`  | the user's roblox username (unique)                           |
-| `{display-name}` | the user's roblox display name (not unique)                   |
-| `{smart-name}`   | (**DEFAULT**) combination of user's username and display name |
-| `{roblox-id}`    | the user's roblox ID                                          |
-| `{roblox-age}`   | the user's roblox account age (in days)                       |
+| Template         | Description                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `{roblox-name}`  | the user's roblox username (unique)                                                                              |
+| `{display-name}` | the user's roblox display name (not unique)                                                                      |
+| `{smart-name}`   | (**DEFAULT**) combination of user's username and display name <br/> Output format: `display-name (@roblox-name)` |
+| `{roblox-id}`    | the user's roblox ID                                                                                             |
+| `{roblox-age}`   | the user's roblox account age (in days)                                                                          |
 
 :::note
 `{smart-name}` only shows the username if there is no display name set, or if the combination of display name and username is >28 characters.
