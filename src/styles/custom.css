@@ -130,6 +130,10 @@ a.astro-g2bywc46[href="#_top"] {
   border-bottom: 1px solid var(--sl-color-hairline);
 }
 
+.yt_iframe {
+  min-height: 315px;
+}
+
 /* Scalable text stuff, for fun and maybe better ux, who knows */
 @layer starlight, scalable-text;
 
